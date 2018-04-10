@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flex</title>
+  <style>
+    @media only screen and (max-width:479px){
+      .main-container{
+        width:100%;
+        margin:10px;
+      }
+      .wrapper{
+        padding:5px;
+      }
+      .time-line{
+        width: 100%;
+      }
+      .footer{
+        width: 100%;
+        margin:10px;
+      }
+      li{
+        padding-right:20px;
+      }
+      .know-more{
+        padding:10px;
+      }
+    }
+    @media only screen and (min-width:480px) and (max-width:767px){
+      .main-container{
+        width: 91.66666667%;
+        margin:15px;
+      }
+      .wrapper{
+        padding:10px;
+      }
+      .time-line{
+        width: 91.66666667%;
+      }
+      .footer{
+        width: 91.66666667%;
+        margin:15px;
+      }
+      .know-more{
+        padding:10px;
+      }
+
+    }
+    @media only screen and (min-width:768px) and (max-width:992px){
+      .main-container{
+        width: 83.33333333%;
+        margin:30px;
+      }
+      .wrapper{
+        padding:20px;
+      }
+      .time-line{
+        width:83.33333333%;
+      }
+      .footer{
+        width:83.33333333%;
+        margin:30px;
+      }
+    }
+
+    @media only screen and (min-width:993px){
+      .main-container{
+        width:80%;
+        margin:60px;
+      }
+      .wrapper{
+        padding:50px;
+      }
+      .time-line{
+        width:80%;
+      }
+      .footer{
+        width:80%;
+        margin:60px;
+      }
+
+
+    }
+    body{
+      font-family:"微软雅黑";
+      font-size:14px;
+
+
+    }
+    header{
+      margin-top:60px;
+    }
+    a{
+      color: #337ab7;
+      text-decoration: none;
+    }
+    .main-container{
+      margin:0 auto;
+      background: #eee;
+      border-radius:10px;
+    }
+    .wrapper{
+      margin:0 auto;
+      display:flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    h1{
+      text-align: center;
+      font-size: 50px;
+    }
+    h2{
+      text-align: center;
+    }
+    h3{
+      font-size: 20px;
+    }
+    q{
+
+      font-size: 20px;
+    }
+    blockquote{
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    cite{
+      color:#777;
+    }
+
+
+    .footer{
+      margin:0 auto;
+      text-align: center;
+
+    }
+    hr{
+      margin-top:30px;
+    }
+    .image{
+      padding: 5px;
+      background: #fff;
+      border-radius:5px;
+    }
+    .image img{
+      width:100%;
+    }
+    .image .description{
+      text-indent: 28px;
+    }
+
+
+    .know-more{
+      font-size:20px;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+<header></header>
+<div class="main-container">
+  <div class="wrapper">
+    <h1>艾伦·麦席森·图灵</h1>
+    <h2><em>计算机科学之父，人工智能之父</em></h2>
+    <section class="image">
+      <img src="images/turing.jpg" alt="turing">
+      <p class="description">《科学美国人》这样评价图灵性情矛盾的一生：“个人生活隐秘又喜欢大众读物和公共广播，
+        自信满怀又异常谦卑。一个核心的悖论是，他认为电脑能够跟人脑并驾齐驱，但是他本人的个性却是率性而为、我行我素、
+        无法预见，一点也不像机器输出来的东西。”
+      </p>
+    </section>
+    <section class="time-line">
+      <ul>
+        <h3>人物生平</h3>
+        <li>
+          <h4>年轻时期</h4>
+        </li>
+        <ul>
+          <li><b>1912年</b>
+            <p>-生于英国伦敦。艾伦·麦席森·图灵少年时就表现出独特的直觉创造能力和对数学的爱好。</p>
+          </li>
+          <li><b>1926年</b>
+            <p>-他考入伦敦有名的舍本(Sherborne)公学，受到良好的中等教育．他在中学期间表现出对自然科学的极大兴趣和敏锐的数学头脑。</p>
+          </li>
+          <li><b>1927年末</b>
+            <p>-年仅15岁的艾伦·麦席森·图灵为了帮助母亲理解爱因斯坦的相对论，写了爱因斯坦的一部著作的内容提要，表现出他已具备非同凡响的数学水平和科学理解力。他对自然科学的兴趣使他在1930年和1931年两次获得他的一位同学莫科姆的父母设立的自然科学奖，获奖工作中有一篇论文题为“亚硫酸盐和卤化物在酸性溶液中的反应”，受到政府派来的督学的赞赏，对自然科学的兴趣为他后来的一些研究奠定了基础，他的数学能力使他在念中学时获得过国王爱德华六世数学金盾奖章。</p>
+          </li>
+        </ul>
+        <li>
+          <h4>科研时期</h4>
+        </li>
+        <ul>
+          <li><b>1931年</b>
+            <p>-图灵考入剑桥大学国王学院，由于成绩优异而获得数学奖学金。在剑桥，他的数学能力得到充分的发展。</p>
+          </li>
+          <li><b>1935年</b>
+            <p>-他的第一篇数学论文“左右殆周期性的等价”发表于《伦敦数学会杂志》上。同一年，他还写出“论高斯误差函数”一文．这一论文使他由一名大学生直接当选为国王学院的研究员，并于次年荣获英国著名的史密斯(Smith)数学奖，成为国王学院声名显赫的毕业生之一。</p>
+          </li>
+          <li><b>1936年</b>
+            <p>-图灵向伦敦权威的数学杂志投了一篇论文，题为《论数字计算在决断难题中的应用》。该文于1937年在《伦敦数学会文集》第42期上发表后，立即引起广泛的注意。在论文的附录里他描述了一种可以辅助数学研究的机器，后来被人称为“图灵机”，这个设想最牛的地方在于，它第一次在纯数学的符号逻辑，和实体世界之间建立了联系，后来我们所熟知的电脑，以及还没有实现的“人工智能”，都基于这个设想。这是他人生第一篇重要论文，也是他的成名之作。</p>
+          </li>
+          <li><b>1937年</b>
+            <p>-艾伦·麦席森·图灵发表的另一篇文章“可计算性与λ可定义性”则拓广了丘奇(Church)提出的“丘奇论点”，形成“丘奇-图灵论点”，对计算理论的严格化，对计算机科学的形成和发展都具有奠基性的意义。</p>
+          </li>
+          <li><b>1936年</b>
+            <p>-艾伦·麦席森·图灵应邀到美国普林斯顿高级研究院学习，并与丘奇一同工作。</p>
+          </li>
+          <li><b>1938年</b>
+            <p>-艾伦·麦席森·图灵回到英国，仍在剑桥大学国王学院任研究员，继续研究数理逻辑和计算理论，同时开始了计算机的研制工作。</p>
+          </li>
+        </ul>
+        <li>
+          <h4>二战经历</h4>
+        </li>
+        <ul>
+          <li><b>1939年</b>
+            <p>-他应召到英国外交部通信处从事军事工作，主要是破译敌方密码的工作。由于破译工作的需要，他参与了世界上最早的电子计算机的研制工作．他的工作取得了极好的成就，因而于1945年获政府的最高奖——大英帝国荣誉勋章(O．B．E．勋章)。人们认为，通用计算机的概念就是艾伦·麦席森·图灵提出来的。1945年，艾伦·麦席森·图灵结束了在外交部的工作，他试图恢复战前在理论计算机科学方面的研究，并结合战时的工作，具体研制出新的计算机来。这一想法得到当局的支持。同年，图灵被录用为泰丁顿(Teddington)国家物理研究所的研究人员，开始从事“自动计算机”(ACE)的逻辑设计和具体研制工作。这一年，图灵写出一份长达50页的关于ACE的设计说明书。这一说明书在保密了27年之后，于1972年正式发表．在图灵的设计思想指导下，1950年制出了ACE样机，1958年制成大型ACE机。</p>
+          </li>
+          <li><b>1948年</b>
+            <p>-图灵接受了曼彻斯特大学的高级讲师职务，并被指定为曼彻斯特自动数字计算机(Madam)项目的负责人助理，具体领导该项目数学方面的工作．作为这一工作的总结。</p>
+          </li>
+          <li><b>1949年</b>
+            <p>-成为曼彻斯特大学计算机实验室的副主任，负责最早的真正意义上的计算机——“曼彻斯特一号”的软件理论开发，因此成为世界上第一位把计算机实际用于数学研究的科学家。</p>
+          </li>
+          <li><b>1950年</b>
+            <p>-图灵编写并出版了《曼彻斯特电子计算机程序员手册》(The programmers’handbook for the Manchester electronic computer)。这期间，他继续进行数理逻辑方面的理论研究。并提出了著名的“图灵测试”。</p>
+          </li>
+          <li><b>1950年</b>
+            <p>-他提出关于机器思维的问题，他的论文“计算机和智能(Computingmachiery and intelligence)，引起了广泛的注意和深远的影响。1950年10月，图灵发表论文《机器能思考吗》。这一划时代的作品，使图灵赢得了“人工智能之父”的桂冠。</p>
+          </li>
+          <li><b>1951年</b>
+            <p>-由于在可计算数方面所取得的成就，成为英国皇家学会会员，时年39岁。</p>
+          </li>
+          <li><b>1952年</b>
+            <p>-他辞去剑桥大学国王学院研究员的职务，专心在曼彻斯特大学工作．除了日常工作和研究工作之外，他还指导一些博士研究生，还担任了制造曼彻斯特自动数字计算机的一家公司——弗兰蒂公司的顾问。1952年，图灵写了一个国际象棋程序。可是，当时没有一台计算机有足够的运算能力去执行这个程序，他就模仿计算机，每走一步要用半小时。他与一位同事下了一盘，结果程序输了。后来美国新墨西哥州洛斯阿拉莫斯国家实验室的研究群根据图灵的理论，在MANIAC上设计出世界上第一个电脑程序的象棋。</p>
+          </li>
+        </ul>
+        <li>
+          <h4>被迫害后逝世</h4>
+        </li>
+        <ul>
+          <li><b>1952年</b>
+            <p>-艾伦·麦席森·图灵的同性伴侣协同一名同谋一起闯进了艾伦·麦席森·图灵的房子实施盗窃。艾伦·麦席森·图灵为此而报警。但是警方的调查结果使得他被控以“明显的猥亵和性颠倒行为”（同性恋）。他没有申辩，并被定罪。在著名的公审后，他被给予了两个选择：坐牢或荷尔蒙疗法。他选择了荷尔蒙注射，并持续了一年。在这段时间里，药物产生了包括乳房不断发育的副作用。</p>
+          </li>
+          <li><b>1954年</b>
+            <p>-图灵被发现死于家中的床上，床头还放着一个被咬了一口的苹果。警方调查后认为是剧毒的氰化物中毒，调查结论为自杀。当时图灵41岁。</p>
+          </li>
+        </ul>
+        <li>
+          <h4>正式平反</h4>
+        </li>
+        <ul>
+          <li><b>2009年</b>
+            <p>-英国计算机科学家康明（John Graham-Cumming）发起了为图灵平反的在线请愿，截止到2009年9月10日请愿签名人数已经超过了3万，为此，当时的英国政府及首相戈登布朗不得不发表正式的道歉声明。</p>
+          </li>
+          <li><b>2012年</b>
+            <p>-霍金、纳斯（Paul Nurse，诺贝尔医学奖得主）、里斯（Martin Rees，英国皇家学会会长）等11位重要人士致函英国首相卡梅伦，要求为其平反。</p>
+          </li>
+          <li><b>2013年</b>
+            <p>-在英国司法部长克里斯・格雷灵（Chris Grayling）的要求下，英国女王终于向图灵颁发了的皇家赦免。英国司法部长宣布，“图灵的晚年生活因为其同性取向而被迫蒙上了一层阴影，我们认为当时的判决是不公的，这种歧视现象现在也已经遭到了废除。为此，女王决定为这位伟人送上赦免，以此向其致敬。”</p>
+          </li>
+        </ul>
+      </ul>
+      <!--</section>
+      <section class="comment">-->
+      <blockquote>
+        <p><q>图灵在破解二战德军密码、拯救国家上发挥了关键作用，是一个'了不起的人'。</q></p>
+        <p><cite>——英国首相卡梅伦</cite></p>
+      </blockquote>
+    </section>
+    <section class="know-more">
+      <p>如果你有时间，可以移步<a href="http://t.im/1dvoz"  target="_blank" rel="nofolow" title="百度百科-图灵">百度百科-图灵</a>了解更多信息</p>
+    </section>
+  </div>
+
+</div>
+<footer>
+  <div class="footer">
+    <hr></hr>
+    <p>Written and coded by <a href="https://github.com/yangpeijia"  rel="nofolow" title="作者github账户">jiajiayang</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
